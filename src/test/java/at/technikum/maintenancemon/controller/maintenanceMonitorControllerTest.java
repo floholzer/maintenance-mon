@@ -12,4 +12,11 @@ class maintenanceMonitorControllerTest {
         assertEquals(controller.message, controller.getStatus());
     }
 
+    @Test
+    void checkSetMessage(){
+        maintenanceMonitorController controller = new maintenanceMonitorController();
+        controller.setMessage("Test");
+        assertEquals("Test", controller.message);
+    }
+
 }

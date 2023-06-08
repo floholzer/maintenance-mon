@@ -19,7 +19,8 @@ public class maintenanceMonitorController {
     }
 
     @RequestMapping("/api/message/reset")
-    public void resetMessage(){
+    public String resetMessage(){
         this.message = "Everything works as expected";
+        return "ok";
     }
 }
